@@ -20,6 +20,10 @@
 		862E2547285DDD48003F1BDE /* WatchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862E2546285DDD48003F1BDE /* WatchAppTests.swift */; };
 		862E2551285DDD48003F1BDE /* WatchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862E2550285DDD48003F1BDE /* WatchAppUITests.swift */; };
 		862E2553285DDD48003F1BDE /* WatchAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862E2552285DDD48003F1BDE /* WatchAppUITestsLaunchTests.swift */; };
+		862E256A285DDED9003F1BDE /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862E2569285DDED9003F1BDE /* Note.swift */; };
+		862E2572285E1CE6003F1BDE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862E2571285E1CE6003F1BDE /* DetailView.swift */; };
+		862E2574285E2605003F1BDE /* CreditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862E2573285E2605003F1BDE /* CreditView.swift */; };
+		862E2577285E269C003F1BDE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862E2576285E269C003F1BDE /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +101,10 @@
 		862E254C285DDD48003F1BDE /* WatchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		862E2550285DDD48003F1BDE /* WatchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAppUITests.swift; sourceTree = "<group>"; };
 		862E2552285DDD48003F1BDE /* WatchAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		862E2569285DDED9003F1BDE /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		862E2571285E1CE6003F1BDE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		862E2573285E2605003F1BDE /* CreditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditView.swift; sourceTree = "<group>"; };
+		862E2576285E269C003F1BDE /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +166,10 @@
 		862E252C285DDD47003F1BDE /* WatchApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				862E2568285DDEC6003F1BDE /* Model */,
 				862E252D285DDD47003F1BDE /* WatchAppApp.swift */,
-				862E252F285DDD47003F1BDE /* ContentView.swift */,
+				862E2575285E2682003F1BDE /* Components */,
+				862E2567285DDEB9003F1BDE /* View */,
 				862E2531285DDD47003F1BDE /* NotificationController.swift */,
 				862E2533285DDD47003F1BDE /* NotificationView.swift */,
 				862E2535285DDD47003F1BDE /* ComplicationController.swift */,
@@ -194,6 +204,32 @@
 				862E2552285DDD48003F1BDE /* WatchAppUITestsLaunchTests.swift */,
 			);
 			path = WatchAppUITests;
+			sourceTree = "<group>";
+		};
+		862E2567285DDEB9003F1BDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				862E252F285DDD47003F1BDE /* ContentView.swift */,
+				862E2571285E1CE6003F1BDE /* DetailView.swift */,
+				862E2573285E2605003F1BDE /* CreditView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		862E2568285DDEC6003F1BDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				862E2569285DDED9003F1BDE /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		862E2575285E2682003F1BDE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				862E2576285E269C003F1BDE /* HeaderView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,10 +420,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				862E2532285DDD47003F1BDE /* NotificationController.swift in Sources */,
+				862E2577285E269C003F1BDE /* HeaderView.swift in Sources */,
+				862E2574285E2605003F1BDE /* CreditView.swift in Sources */,
 				862E2530285DDD47003F1BDE /* ContentView.swift in Sources */,
 				862E2536285DDD47003F1BDE /* ComplicationController.swift in Sources */,
+				862E2572285E1CE6003F1BDE /* DetailView.swift in Sources */,
 				862E252E285DDD47003F1BDE /* WatchAppApp.swift in Sources */,
 				862E2534285DDD47003F1BDE /* NotificationView.swift in Sources */,
+				862E256A285DDED9003F1BDE /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
