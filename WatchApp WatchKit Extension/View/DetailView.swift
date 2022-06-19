@@ -13,6 +13,9 @@ struct DetailView: View {
     let count: Int
     let index: Int
     @State private var isCreditVisible: Bool = false
+    @State private var isSettingsVisible: Bool = false
+    @AppStorage("contentlineCount") var contentLineCount: Int = 1
+
 
     
     var body: some View {
@@ -26,6 +29,7 @@ struct DetailView: View {
                 Text(note.text)
                     .font(.title3)
                     .fontWeight(.semibold)
+                    .lineLimit(contentLineCount)
                     .multilineTextAlignment(.center)
             }
             
@@ -33,7 +37,14 @@ struct DetailView: View {
             HStack{
                Image(systemName: "gear")
                     .imageScale(.large)
+                    .onTapGesture {
+                        isSettingsVisible.toggle()
+                    }
+                    .sheet(isPresented: $isSettingsVisible, content: {
+                        SettingView()
+                    })
                 Spacer()
+                
                 Text("\(index + 1)/ \(count)")
                 Spacer()
                 Image(systemName: "info.circle")
