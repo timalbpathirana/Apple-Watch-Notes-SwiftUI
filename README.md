@@ -1,4 +1,4 @@
-# Thanks for checking out my first SwiftUI project.
+# Thanks for checking out my SwiftUI Apple Watch project.
 
 My first ever apple watch app. This is a note taking app with few views including credit page. 
 
